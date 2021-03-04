@@ -58,7 +58,6 @@ def readPersonByName(name, connection) -> list:
     return result
 
 def readPersonById(id, connection) -> Person:
-    result = []
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM person WHERE id = ? ", (str(id)))
     line = cursor.fetchone() 
