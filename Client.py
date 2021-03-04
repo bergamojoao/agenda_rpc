@@ -12,7 +12,7 @@ while op != 0:
             phone = input("Digite o telefone: ")
             server.inserir(name, address, phone)
         except Exception as ex:
-            print("ERRO INESPERADO!! ", str(ex))
+            print("ERRO INESPERADO!!! ", str(ex))
     elif op == 2:
         try:
             name = input("Digite o nome do contato: ")
@@ -23,7 +23,7 @@ while op != 0:
                 print("%d\t%s\t%s\t%s"%(person['_Person__id'], person['_Person__name'], person['_Person__address'], person['_Person__phone']))
             print("")
         except Exception as ex:
-            print("ERRO INESPERADO!! ", str(ex))
+            print("ERRO INESPERADO!!! ", str(ex))
     elif op == 3:
         try:
             id = int(input("\nDigite o ID do contato que deseja alterar: "))
@@ -49,11 +49,11 @@ while op != 0:
             server.alterar(id, nome, endereco, telefone)
             print("Contato alterado com sucesso!\n")
         except Exception as ex:
-            print("ERRO INESPERADO!! ", str(ex))
+            print("ERRO INESPERADO!!! ", str(ex))
     elif op == 4:
         try:
             id = int(input("\nDigite o ID do contato que deseja remover: "))
             server.remover(id)
             print("Contato removido com sucesso!\n")
         except Exception as ex:
-            print("ERRO INESPERADO!! ", str(ex))
+            print("ERRO INESPERADO!!! ", str(ex))
